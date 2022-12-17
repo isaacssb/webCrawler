@@ -16,9 +16,11 @@ $listMusic = [];
 
 if (!$namesMusic || !$namesSinger) {
     var_dump('Erro no Xpath');
+    exit;
 }
 if (count($namesMusic) !== count($namesSinger)) {
     var_dump('Existe uma divergencia na contagem das musicas');
+    exit;
 }
 
 foreach ($namesMusic as $nameMusic) {
